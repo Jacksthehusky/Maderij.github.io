@@ -12,8 +12,9 @@ const getQuestions = async () => {
 const searchQuestions = (searchText) => {
   // Get matches to current text input
   let matches = questions.filter((question) => {
-    const regex = new RegExp(`\\b${searchText}`, "gi");
-    return question.q.match(regex) || question.abbr.match(regex);
+    const regexText = searchText.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+    const regex = new RegExp(regexText, "giu");
+    return regex.test(question.q) || regex.test(question.id.toString());
   });
 
   // Clear when input or matches are empty
@@ -25,15 +26,16 @@ const searchQuestions = (searchText) => {
   outputHtml(matches);
 };
 
+
 // Show results in HTML
 const outputHtml = (matches) => {
   if (matches.length > 0) {
     const html = matches
       .map((match) => {
-        const regex = new RegExp(`(${search.value})`, "gi");
+        const regex = new RegExp(`(${search.value})`, "giu");
         const highlightedQuestion = match.q.replace(regex, "<mark style='background-color: red; color:white'>$1</mark>");
         return `
-          <div class="card card-body">
+          <div class="card card-body" style="direction: rtl; padding-right: 10px;">
             <a href="./details.html?id=${match.id}">
               <p>${highlightedQuestion}<p>
             </a>

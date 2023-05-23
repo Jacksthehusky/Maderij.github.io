@@ -17,6 +17,22 @@ fetch("../data/questions.json")
   //question
   document.getElementById("question").textContent = question.q;
 
+  //notes
+  document.getElementById("notes").innerHTML = question.notes;
+
+  // Set the modifiedDateTime element's content
+  const modifiedDateTimeElement = document.getElementById("modified-date-time");
+  const options = { year: 'numeric', month: 'numeric', day: 'numeric'};
+  const formattedModifiedDateTime = new Date(question.modifiedDateTime).toLocaleString('en-US', options);
+  modifiedDateTimeElement.textContent = "تاريخ الالتحاق: " + formattedModifiedDateTime;
+
+
+//image
+const url = question.screenshots;
+const imageElement = document.createElement("div");
+imageElement.innerHTML = `<img src="${url}" alt="" class="w3-hover-opacity" onclick="onClick(this)">`;
+document.getElementById("screenshots").appendChild(imageElement.firstChild);
+
   //answers
   const answersContainer = document.getElementById("answers-container");
 
@@ -32,52 +48,8 @@ fetch("../data/questions.json")
     answersContainer.appendChild(answerElement);
   }
 
-  //notes
-  document.getElementById("notes").innerHTML = question.notes;
+  
 
-  // Set the modifiedDateTime element's content
-  const modifiedDateTimeElement = document.getElementById("modified-date-time");
-  const options = { month: 'long', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' };
-  const formattedModifiedDateTime = new Date(question.modifiedDateTime).toLocaleString('en-US', options);
-  modifiedDateTimeElement.textContent = "Updated: " + formattedModifiedDateTime;
-
-  // Feedback section
-  const helpfulCountElement = document.getElementById("helpful-count");
-  const likeBtn = document.getElementById("like-btn");
-  const dislikeBtn = document.getElementById("dislike-btn");
-
-  let helpfulCount = question.helpfulCount || 0;
-  let unhelpfulCount = question.unhelpfulCount || 0;
-
-  // Update helpful count
-  function updateHelpfulCount() {
-    helpfulCountElement.textContent = helpfulCount + " out of " + (helpfulCount + unhelpfulCount) + " found this helpful";
-    // Store the updated question data in local storage
-    localStorage.setItem("questions", JSON.stringify(questions));
-  }
-
-  // Handle like button click
-  function handleLike() {
-    helpfulCount++;
-    question.helpfulCount = helpfulCount;
-    updateHelpfulCount();
-    likeBtn.disabled = true;
-    dislikeBtn.disabled = false;
-  }
-
-  // Handle dislike button click
-  function handleDislike() {
-    unhelpfulCount++;
-    question.unhelpfulCount = unhelpfulCount;
-    updateHelpfulCount();
-    likeBtn.disabled = false;
-    dislikeBtn.disabled = true;
-  }
-
-  // Bind event handlers to buttons
-  likeBtn.addEventListener("click", handleLike);
-  dislikeBtn.addEventListener("click", handleDislike);
-
-  // Initialize the helpful count
-  updateHelpfulCount();
+  
+  
 })
