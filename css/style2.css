@@ -708,7 +708,7 @@ a {
   opacity: 0;
   transition: 0.5s ease;
   animation: slideTop 1s ease forwards;
-  animation-delay: 2s;
+  animation-delay: 0.5s;
 }
 
 .btns:hover {
@@ -1088,11 +1088,17 @@ h4 {
   max-width: 20px;
   border-radius: 25%;
 }
-
-.Solution p {
+.Solution span {
   color: rgb(122, 21, 21);
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
+  padding: 15px 10px;
+}
+
+.Solution p {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
   padding: 15px 10px;
 }
 
@@ -1110,7 +1116,7 @@ h4 {
 }
 
 .Solution div img {
-  width: 40vw;
+  width: 14vw;
   cursor: pointer;
 }
 
@@ -1430,14 +1436,15 @@ body {
   text-align: center;
   line-height: 28px;
   display: block;
-  float: left;
-  margin-left: -50px;
+  float: right;
+  margin-right: -20px;
+  margin-left: +20px;
   position: relative;
   top: -2px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.answer-steps li img {
+.display-image img {
   margin-top: 1em;
   width: 100%;
   max-width: 1000px;

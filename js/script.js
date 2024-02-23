@@ -1,97 +1,3 @@
-var typed = new Typed(".multiple-text", {
-  strings: [
-    "Accounting.",
-    "Stock Control.",
-    "Payroll.",
-    "Inventory Management.",
-    "POS.",
-    "Invoicing.",
-    "Payments.",
-    "Supermarkets.",
-    "Warehouse Management.",
-    "Bank Reconciliation.",
-    "Purchase Orders.",
-    "Reports.",
-    "Car Dealers.",
-    "Catering Factories.",
-    "Auditing Firms.",
-    "Spare Parts.",
-    "Schools.",
-    "Libraries.",
-  ],
-  typeSpeed: 90,
-  backSpeed: 40,
-  backDelay: 1000,
-  loop: true,
-});
-
-
-function sendWhatsAppMessageFooter() {
-  // Replace this with your WhatsApp number and message text
-  var whatsappNumber = "+96171492657";
-  var messageText = "Hello, I would like to inquire about your services.";
-
-  // Generate the WhatsApp message URL
-  var whatsappUrl =
-    "https://api.whatsapp.com/send?phone=" +
-    whatsappNumber +
-    "&text=" +
-    encodeURIComponent(messageText);
-
-  // Open the WhatsApp message URL in a new window
-  window.open(whatsappUrl);
-}
-
-function sendWhatsAppMessageHome() {
-  // Replace this with your WhatsApp number and message text
-  var whatsappNumber = "+96171492657";
-  var messageText = "Hello, I would like to inquire about your services.";
-
-  // Generate the WhatsApp message URL
-  var whatsappUrl =
-    "https://api.whatsapp.com/send?phone=" +
-    whatsappNumber +
-    "&text=" +
-    encodeURIComponent(messageText);
-
-  // Open the WhatsApp message URL in a new window
-  window.open(whatsappUrl);
-}
-
-function sendWhatsAppMessageMichel() {
-  // Replace this with your WhatsApp number and message text
-  var whatsappNumber = "+9613751442";
-  var messageText =
-    "Hi Mr. Michel, while visiting your website, I came across your software and I am interested in learning more about it. Could you provide me with additional information?";
-
-  // Generate the WhatsApp message URL
-  var whatsappUrl =
-    "https://api.whatsapp.com/send?phone=" +
-    whatsappNumber +
-    "&text=" +
-    encodeURIComponent(messageText);
-
-  // Open the WhatsApp message URL in a new window
-  window.open(whatsappUrl);
-}
-
-function sendWhatsAppMessageNassar() {
-  // Replace this with your WhatsApp number and message text
-  var whatsappNumber = "+9613751440";
-  var messageText =
-    "Hi Mr. Nassar, while visiting your website, I came across your software and I am interested in learning more about it. Could you provide me with additional information?";
-
-  // Generate the WhatsApp message URL
-  var whatsappUrl =
-    "https://api.whatsapp.com/send?phone=" +
-    whatsappNumber +
-    "&text=" +
-    encodeURIComponent(messageText);
-
-  // Open the WhatsApp message URL in a new window
-  window.open(whatsappUrl);
-}
-
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -142,8 +48,8 @@ window.addEventListener('scroll', () => {
 ScrollReveal({
   //reset: true,
   distance: '80px',
-  duration: 2000,
-  delay: 200
+  duration: 1000,
+  delay: 100
 });
 
 ScrollReveal().reveal('.home-content, .map, .heading', { origin:'top' });

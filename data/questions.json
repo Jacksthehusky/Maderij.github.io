@@ -1,35 +1,41 @@
 [
   {
     "id": 1854,
-    "requiresPermission": false,
-    "group":"مؤهل",
-    "q": "بليغ الزين",
-    "abbr":"03/743957",
-    "screenshots": "../screenshots/pic/01.jpg",
-    "modifiedDateTime": "2021-07-13",
-    "LastDay":"",
-    "Enfikek":"",
-    "notes":"جبل لبنان - الشوف - الزعروريه",
-    "BloodType":"",
-    "TalabIjeze":"بالمفرزة",
-    "Dawra":"",
-    "answer":""
+    "requiresPermission": true,
+    "group": "مؤهل",
+    "name": "بليغ الزين",
+    "phone": "03/743957",
+    "pic": "",
+    "joinDate": "2021-07-13",
+    "address": "جبل لبنان - الشوف - الزعروريه",
+    "BloodType": "",
+    "answer": [],
+    "excel": []
   },
   {
     "id": 1911,
-    "requiresPermission": false,
-    "group":"مؤهل",
-    "q": "معين الخشن",
-    "abbr":"03/985665",
-    "screenshots": "../screenshots/1.jpg",
-    "modifiedDateTime": "2021-02-06",
-    "LastDay":"",
-    "Enfikek":"",
-    "notes":"الشويفات - حارة الامرا - عاليه جبل لبنان",
-    "BloodType":"",
-    "TalabIjeze":"بالمفرزة",
-    "Dawra":"",
-    "answer":"1"
+    "requiresPermission": true,
+    "group": "مؤهل",
+    "name": "معين الخشن",
+    "phone": "03/985665",
+    "pic": "../screenshots/1.jpg",
+    "joinDate": "2021-02-06",
+    "address": "الشويفات - حارة الامرا - عاليه جبل لبنان",
+    "BloodType": "",
+    "answer": [],
+    "excel": []
+  },
+  {
+    "id": 3579,
+    "requiresPermission": true,
+    "group": "خفير",
+    "name": "هادي المكمل",
+    "phone": "71/454874",
+    "pic": "../screenshots/هادي المكمل.jpg",
+    "joinDate": "2021-12-13",
+    "address": "الشويفات - حارة الامرا - عاليه جبل لبنان",
+    "BloodType": "",
+    "answer": ["علم إنفكاك وإلتحاق + الإجازات"],
+    "excel": ["../Excel/1.xlsx"]
   }
-  
 ]

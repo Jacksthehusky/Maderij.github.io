@@ -19,7 +19,7 @@
   <div class="w3-top">
     <div class="topbar w3-bar w3-white w3-card" id="myNavbar">
       <div>
-        <a href="../index.html" class="logobrains w3-bar-item w3-wide">Maderij</a>
+        <a href="../index.html" class="logobrains w3-bar-item">موحد</a>
         <a href="../index.html" aria-label="logobrains">
           <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
           <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000"
@@ -35,7 +35,7 @@
         <a href="../index.html#team" class="navbartop w3-bar-item" style="--i: 3">TEAM</a>
         <a href="../index.html#work" class="navbartop w3-bar-item" style="--i: 4">CAREERS</a>
         <a href="../index.html#contact" class="navbartop w3-bar-item" style="--i: 5">CONTACT</a>
-        <a href="HelpCenter.html" class="navbartop w3-bar-item" style="--i: 6">HELP CENTER</a>
+        <a href="sl.html" class="navbartop w3-bar-item" style="--i: 6">لائحة الأسماء</a>
       </div>
 
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -54,7 +54,7 @@
     <a href="../index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
     <a href="../index.html#work" onclick="w3_close()" class="w3-bar-item w3-button">CAREERS</a>
     <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    <a href="HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">HELP CENTER</a>
+    <a href="sl.html" onclick="w3_close()" class="w3-bar-item w3-button">لائحة الأسماء</a>
   </nav>
 
 
@@ -65,7 +65,7 @@
         <div>
           <ul class="breadcrumb">
             <li>
-              <a href="HelpCenter.html">قائمة العناصر</a>
+              <a href="sl.html">قائمة العناصر</a>
             </li>
             <li>
               معلومات
@@ -84,35 +84,17 @@
   <!-- html output after clicking on card search -->
   <section>
     <div class="Solution w3-container w3-light-grey" style="direction: rtl; text-align: right;">
-      الاسم: <span id="question"></span><br>
-      رقم المالي: <span id="id"></span>/ب<br>
-      <span id="modified-date-time"></span><br>
-      رقم الهاتف: <span id="abbr"></span><br>
-      عنوان السكن (محافظة-القضاء-المدينة أو القرية): <span id="notes"></span><br>
-      <div id="screenshots"></div>
-    </div>
+     <p> 
+      الاسم:<span id="name"></span><br>
+      رقم المالي:<span id="id"></span><br>
+      تاريخ الالتحاق:<span id="join-date"></span><br>
+      رقم الهاتف:<span id="phone"></span><br>
+      عنوان السكن:<span id="address"></span><br>
+      </p><div id="pic" class="display-image" ></div>
+      <ul id="answers-container" class="answer-steps">
+      </ul>
+      </div>
   </section>
-
-<!-- html output after clicking on card search 
-<section>
-  <div class="Solution w3-container w3-light-grey" style="direction: rtl; text-align: right;">
-    <div class="question-header">
-      <div><span class="question-title" id="abbr"></span> <span class="question-id" id="id"></span></div>
-      <span class="question-time" id="modified-date-time"></span>
-    </div>
-    <div style="display: flex;justify-content: space-between;align-items: baseline;">
-      <p id="question"></p>
-      <button class="whatsapp-share-button" id="share-button">Share</button>
-    </div>
-    <ul id="answers-container" class="answer-steps">
-    </ul>
-    <i id="notes"></i>
-  </div>
-  <div style="color: #000;" id="related-articles" class="related-articles">
-    <ul id="related-articles-list"></ul>
-  </div>
-</section>-->
-
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">

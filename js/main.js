@@ -14,7 +14,7 @@ const searchQuestions = (searchText) => {
   let matches = questions.filter((question) => {
     const regexText = searchText.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
     const regex = new RegExp(regexText, "giu");
-    return regex.test(question.q) || regex.test(question.id.toString());
+    return regex.test(question.name) || regex.test(question.id.toString());
   });
 
   // Clear when input or matches are empty
@@ -33,7 +33,7 @@ const outputHtml = (matches) => {
     const html = matches
       .map((match) => {
         const regex = new RegExp(`(${search.value})`, "giu");
-        const highlightedQuestion = match.q.replace(regex, "<mark style='background-color: red; color:white'>$1</mark>");
+        const highlightedQuestion = match.name.replace(regex, "<mark style='background-color: red; color:white'>$1</mark>");
         return `
           <div class="card card-body" style="direction: rtl; padding-right: 10px;">
             <a href="./details.html?id=${match.id}">
@@ -52,15 +52,15 @@ const outputHtml = (matches) => {
       link.addEventListener("click", (event) => {
         const href = link.getAttribute("href");
         const questionId = href.match(/id=(\d+)/)[1];
-        const question = questions.find((q) => q.id == questionId);
+        const question = questions.find((name) => name.id == questionId);
 
         if (question.requiresPermission) {
           event.preventDefault();
           const password = prompt("Access denied.");
-          if (password === 'brains123') {
+          if (password === 'hadi123') {
             window.location.href = href;
           } else {
-            alert("Kindly reach out to our customer services for assistance in accessing this answer.");
+            alert("يرجى التواصل مع خدمة العملاء لدينا للحصول على المساعدة في الوصول إلى هذه البيانات");
           }
         }
       });
