@@ -1,7 +1,6 @@
 [
   {
     "id": 1854,
-    "requiresPermission": true,
     "group": "مؤهل",
     "name": "بليغ الزين",
     "phone": "03/743957",
@@ -9,12 +8,12 @@
     "joinDate": "2021-07-13",
     "address": "جبل لبنان - الشوف - الزعروريه",
     "BloodType": "",
+    "requiresPermission": true,
     "answer": [],
     "excel": []
   },
   {
     "id": 1911,
-    "requiresPermission": true,
     "group": "مؤهل",
     "name": "معين الخشن",
     "phone": "03/985665",
@@ -22,12 +21,12 @@
     "joinDate": "2021-02-06",
     "address": "الشويفات - حارة الامرا - عاليه جبل لبنان",
     "BloodType": "",
+    "requiresPermission": true,
     "answer": [],
     "excel": []
   },
   {
     "id": 3579,
-    "requiresPermission": true,
     "group": "خفير",
     "name": "هادي المكمل",
     "phone": "71/454874",
@@ -35,7 +34,60 @@
     "joinDate": "2021-12-13",
     "address": "الشويفات - حارة الامرا - عاليه جبل لبنان",
     "BloodType": "",
+    "requiresPermission": true,
     "answer": ["علم إنفكاك وإلتحاق + الإجازات"],
     "excel": ["../Excel/1.xlsx"]
+  },
+  {
+    "id": 3875,
+    "group": "خفير",
+    "name": "علي الشمعة",
+    "phone": "76/386063",
+    "pic": "",
+    "joinDate": "2022-08-16",
+    "address": "برجا",
+    "BloodType": "A+",
+    "requiresPermission": true,
+    "answer": [],
+    "excel": []
+  },
+  {
+    "id": 3850,
+    "group": "خفير",
+    "name": "لواء غريزي",
+    "phone": "76/709037",
+    "pic": "",
+    "joinDate": "2022-08-16",
+    "address": "عاليه",
+    "BloodType": "A+",
+    "requiresPermission": true,
+    "answer": [],
+    "excel": []
+  },
+  {
+    "id": 3843,
+    "group": "خفير",
+    "name": "وديان يحي",
+    "phone": "03/754788",
+    "pic": "",
+    "joinDate": "2022-08-16",
+    "address": "البنية",
+    "BloodType": "B+",
+    "requiresPermission": true,
+    "answer": [],
+    "excel": []
+  },
+  {
+    "id": 3474,
+    "group": "خفير",
+    "name": "أمجد الخطيب",
+    "phone": "03/989581",
+    "pic": "",
+    "joinDate": "2021-10-13",
+    "address": "جبل لبنان - عاليه - عرمون",
+    "BloodType": "B+",
+    "requiresPermission": true,
+    "answer": [],
+    "excel": []
   }
 ]

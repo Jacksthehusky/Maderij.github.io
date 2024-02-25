@@ -8,15 +8,19 @@ fetch("../data/questions.json")
     questions = data;
     const question = questions.find((q) => q.id == id);
 
-    //id
+    //رقم المالي
     document.getElementById("id").innerHTML = question.id + "/ب";
-    //phone
+    //رقم الهاتف
     document.getElementById("phone").innerHTML = question.phone;
-    //name
+    //الاسم
     document.getElementById("name").textContent = question.name;
-    //address
-    document.getElementById("address").innerHTML = question.address;
-    //joinDate
+    //عنوان السكن
+    document.getElementById("address").textContent = question.address;
+    //الرتبة
+    document.getElementById("group").textContent = question.group;
+    //فئة الدم
+    document.getElementById("BloodType").textContent = question.BloodType;
+    //تاريخ الالتحاق
     const joinDateElement = document.getElementById("join-date");
     const options = {
       day: "2-digit",
