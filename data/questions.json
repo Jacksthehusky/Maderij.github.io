@@ -33,7 +33,7 @@
     "pic": "../screenshots/هادي المكمل.jpg",
     "joinDate": "2021-12-13",
     "address": "الشويفات - حارة الامرا - عاليه جبل لبنان",
-    "BloodType": "",
+    "BloodType": "A+",
     "requiresPermission": true,
     "answer": ["علم إنفكاك وإلتحاق + الإجازات"],
     "excel": ["../Excel/1.xlsx"]

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="../css/style2.css" />
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="../Images/brains.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="../Images/logo.ico" />
 </head>
 
 <body>
@@ -82,20 +82,24 @@
 
 
   <!-- html output after clicking on card search -->
-  <section>
+  <section class="profile">
     <div class="Solution w3-container w3-light-grey" style="direction: rtl; text-align: right;">
-     <p> 
-      رقم المالي:<span id="id"></span><br>
-      الاسم:<span id="name"></span><br>
-      الرتبة:<span id="group"></span><br>
-      رقم الهاتف:<span id="phone"></span><br>
-      تاريخ الالتحاق:<span id="join-date"></span><br>
-      عنوان السكن:<span id="address"></span><br>
-      فئة الدم:<span id="BloodType"></span><br>
-      </p><div id="pic" class="display-image" ></div>
+      <div class="row">
+        <p>
+          الرقم المالي :<span id="id"></span><br>
+          الاسم :<span id="name"></span><br>
+          الرتبة :<span id="group"></span><br>
+          رقم الهاتف :<span id="phone"></span><br>
+          تاريخ الإلتحاق :<span id="join-date"></span><br>
+          عنوان السكن :<span id="address"></span><br>
+          فئة الدم :<span id="BloodType"></span></p>
+      </div>
+      <p>صورة عن بطاقة تفويض الخدمة :
+      <div id="pic" class="display-image"></div>
+      </p>
       <ul id="answers-container" class="answer-steps">
       </ul>
-      </div>
+    </div>
   </section>
 
   <!-- Modal for full size images on click-->
