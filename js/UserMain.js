@@ -36,7 +36,7 @@ const outputHtml = (matches) => {
         const highlightedQuestion = match.name.replace(regex, "<mark style='background-color: red; color:white'>$1</mark>");
         return `
           <div class="card card-body" style="direction: rtl; padding-right: 10px;">
-            <a href="./details.html?id=${match.id}">
+            <a href="./UserDetail.html?id=${match.id}">
               <p>${highlightedQuestion}<p>
             </a>
           </div>

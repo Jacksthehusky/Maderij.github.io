@@ -28,12 +28,12 @@
 
       <!-- Right-sided navbar links -->
       <div class="header w3-right w3-hide-small w3-hide-medium">
-        <a href="../index.html#home" class="navbartop w3-bar-item" style="--i: 1">HOME</a>
-        <a href="../index.html#about" class="navbartop w3-bar-item" style="--i: 2">ABOUT</a>
-        <a href="../index.html#team" class="navbartop w3-bar-item" style="--i: 3">TEAM</a>
-        <a href="../index.html#work" class="navbartop w3-bar-item" style="--i: 4">CAREERS</a>
-        <a href="../index.html#contact" class="navbartop w3-bar-item" style="--i: 5">CONTACT</a>
-        <a href="sl.html" class="navbartop w3-bar-item active" style="--i: 6">لائحة الأسماء</a>
+        <a href="../index.html" class="navbartop w3-bar-item" style="--i:1;">لوحة القيادة الرئيسية</a>
+        <a href="UserList.html" class="navbartop w3-bar-item" style="--i:2;">لائحة الأسماء</a>
+        <a href="NamouzajList.html" class="navbartop w3-bar-item" style="--i:3;">نماذج</a>
+        <a href="#BaridList" class="navbartop w3-bar-item active" style="--i:4;">بريد</a>
+        <!--  <a href="#contact" class="navbartop w3-bar-item" style="--i:5;">CONTACT</a>
+        <a href="#none" class="navbartop w3-bar-item" style="--i:6;">none </a>-->
       </div>
 
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -47,16 +47,16 @@
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display: none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="../index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="../index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-    <a href="../index.html#work" onclick="w3_close()" class="w3-bar-item w3-button">CAREERS</a>
-    <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    <a href="sl.html" onclick="w3_close()" class="w3-bar-item w3-button">لائحة الأسماء</a>
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">لوحة القيادة الرئيسية</a>
+    <a href="UserList.html" onclick="w3_close()" class="w3-bar-item w3-button">لائحة الأسماء</a>
+    <a href="NamouzajList.html" onclick="w3_close()" class="w3-bar-item w3-button">نماذج</a>
+    <a href="#BaridList" onclick="w3_close()" class="w3-bar-item w3-button">بريد</a>
+    <!-- <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="#none" onclick="w3_close()" class="w3-bar-item w3-button"> none</a>-->
   </nav>
 
   <!-- header section -->
-  <header class="w3-display-container" id="HelpCenter">
+  <header class="w3-display-container" id="BaridList">
     <div class="HelpSearch">
       <div class="container mt-5">
         <div class="row">
@@ -69,8 +69,8 @@
                 colors="primary:#ffffff,secondary:red" style="width:70px;height:70px">
               </lord-icon>
             </div>
-            <h3 class="text-center mb-3">نماذج</h3>
-            <p class="digitalized text-center">للحصول على مستند 
+            <h3 class="text-center mb-3">بريد</h3>
+            <p class="digitalized text-center">للحصول على مذكرة 
               <span>إبحث هنا</span>
             </p>
             <div class="form-group search">
@@ -93,8 +93,8 @@
  <!-- FAQ Section -->
   <section class="faqs">
     <div class="w3-container w3-light-grey" style="direction: rtl; text-align: right;">
-      <h1>لائحة بالنماذج</h1>
-      <h4><span>مستندات </span>شائعة الاستخدام </h4>
+      <h1>لائحة بالمذكرات</h1>
+      <h4>حول دفتر <span>الصادر</span></h4>
       <br>
       <div id="faqs"></div>
       <ul id="answers-container" class="answer-steps">
@@ -107,12 +107,10 @@
   <footer class="w3-center w3-black" style="padding-top:20px !important;">
     <p class="w3-small">Copyright &copy; مفرزة المداخل والمدارج المطار | All Rights Reserved - Designed and powered by Hadi</p>
   </footer>
-
-
-  <script src="main1.js"></script>
+ 
   <script src="script.js"></script>
-  <script src="s1.js"></script>
+  <script src="BaridMain.js"></script>
+  <script src="BaridList.js"></script>
   
 </body>
-
 </html>

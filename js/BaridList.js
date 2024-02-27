@@ -1,4 +1,4 @@
-fetch("../data/questions.json")
+fetch("../data/barid.json")
   .then((response) => response.json())
   .then((questions) => {
     const faqsContainer = document.getElementById("faqs");
@@ -37,7 +37,7 @@ fetch("../data/questions.json")
           const questionElement = document.createElement("a");
           const questionContainer = document.createElement("p");
           questionElement.innerHTML = question.name;
-          questionElement.href = `details.html?id=${question.id}`;
+          questionElement.href = `BaridDetail.html?id=${question.id}`;
           questionContainer.appendChild(questionElement);
           faqsContainer.appendChild(questionContainer);
 
@@ -60,3 +60,5 @@ fetch("../data/questions.json")
     }
   })
   .catch((error) => console.error(error));
+
+  

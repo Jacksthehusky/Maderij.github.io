@@ -4,7 +4,7 @@ let questions = [];
 
 // Get questions
 const getQuestions = async () => {
-  const res = await fetch("../data/files.json");
+  const res = await fetch("../data/barid.json");
   questions = await res.json();
 };
 
@@ -36,7 +36,7 @@ const outputHtml = (matches) => {
         const highlightedQuestion = match.name.replace(regex, "<mark style='background-color: red; color:white'>$1</mark>");
         return `
           <div class="card card-body" style="direction: rtl; padding-right: 10px;">
-            <a href="./d1.html?id=${match.id}">
+            <a href="./BaridDetail.html?id=${match.id}">
               <p>${highlightedQuestion}<p>
             </a>
           </div>

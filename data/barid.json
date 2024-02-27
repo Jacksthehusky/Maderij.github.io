@@ -2,7 +2,7 @@
   {
     "id": 1,
     "requiresPermission": true,
-    "group": "",
+    "group": "2024",
     "name": "استجواب",
     "pic": "",
     "scanned": "../نماذج/استجواب/استجواب.xlsx"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "requiresPermission": true,
-    "group": "",
+    "group": "2023",
     "name":  "استصدار جواز سفر",
     "pic": "../screenshots/1.jpg",
     "scanned": "../نماذج/استصدار جواز سفر/استصدار جواز سفر.jpg"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "requiresPermission": true,
-    "group": "",
+    "group": "2024",
     "name": "التقديرات والعلامات المسلكية",
     "pic": "../screenshots/هادي المكمل.jpg",
     "scanned":"../نماذج/التقديرات والعلامات المسلكية/التقديرات والعلامات المسلكية.jpg"
