@@ -28,7 +28,10 @@ fetch("../data/questions.json")
       year: "numeric",
     };
     // Convert the joinDate to a Date object and format it
-    const formattedJoinDate = new Date(question.joinDate).toLocaleDateString("en-US", options);
+    const formattedJoinDate = new Date(question.joinDate).toLocaleDateString(
+      "en-US",
+      options
+    );
 
     // Update the text content of the joinDateElement
     joinDateElement.textContent = formattedJoinDate;
@@ -61,18 +64,18 @@ fetch("../data/questions.json")
       }
     }
   });
-   
-   // Function to handle Excel file download
-   function downloadExcel(excelUrl, fileName) {
-     // Create an anchor element
-     const link = document.createElement("a");
-   
-     // Set the href attribute of the anchor to the Excel file URL
-     link.href = excelUrl;
-   
-     // Set the download attribute to prompt the user to download the file with a specific filename
-     link.download = `${fileName}.xlsx`;
-   
-     // Programmatically trigger a click event on the anchor element to start the download
-     link.click();
-   }
+
+// Function to handle Excel file download
+function downloadExcel(excelUrl, fileName) {
+  // Create an anchor element
+  const link = document.createElement("a");
+
+  // Set the href attribute of the anchor to the Excel file URL
+  link.href = excelUrl;
+
+  // Set the download attribute to prompt the user to download the file with a specific filename
+  link.download = `${fileName}.xlsx`;
+
+  // Programmatically trigger a click event on the anchor element to start the download
+  link.click();
+}

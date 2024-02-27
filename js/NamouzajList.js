@@ -60,5 +60,3 @@ fetch("../data/files.json")
     }
   })
   .catch((error) => console.error(error));
-
-  

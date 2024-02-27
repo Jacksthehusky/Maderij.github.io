@@ -26,14 +26,16 @@ const searchQuestions = (searchText) => {
   outputHtml(matches);
 };
 
-
 // Show results in HTML
 const outputHtml = (matches) => {
   if (matches.length > 0) {
     const html = matches
       .map((match) => {
         const regex = new RegExp(`(${search.value})`, "giu");
-        const highlightedQuestion = match.name.replace(regex, "<mark style='background-color: red; color:white'>$1</mark>");
+        const highlightedQuestion = match.name.replace(
+          regex,
+          "<mark style='background-color: red; color:white'>$1</mark>"
+        );
         return `
           <div class="card card-body" style="direction: rtl; padding-right: 10px;">
             <a href="./NamouzajDetail.html?id=${match.id}">
@@ -41,8 +43,7 @@ const outputHtml = (matches) => {
             </a>
           </div>
         `;
-      }
-      )
+      })
       .join("");
     matchList.innerHTML = html;
 
@@ -57,10 +58,12 @@ const outputHtml = (matches) => {
         if (question.requiresPermission) {
           event.preventDefault();
           const password = prompt("Access denied.");
-          if (password === 'hadi123') {
+          if (password === "hadi123") {
             window.location.href = href;
           } else {
-            alert("يرجى التواصل مع خدمة العملاء لدينا للحصول على المساعدة في الوصول إلى هذه البيانات");
+            alert(
+              "يرجى التواصل مع خدمة العملاء لدينا للحصول على المساعدة في الوصول إلى هذه البيانات"
+            );
           }
         }
       });

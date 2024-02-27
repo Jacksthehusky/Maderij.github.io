@@ -60,5 +60,3 @@ fetch("../data/barid.json")
     }
   })
   .catch((error) => console.error(error));
-
-  
