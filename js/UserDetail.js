@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 let questions = [];
 
-fetch("../data/questions.json")
+fetch("../data/User.json")
   .then((response) => response.json())
   .then((data) => {
     questions = data;

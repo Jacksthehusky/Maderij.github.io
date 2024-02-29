@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 let questions = [];
 
-fetch("../data/files.json")
+fetch("../data/Namouzaj.json")
   .then((response) => response.json())
   .then((data) => {
     questions = data;

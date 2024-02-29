@@ -4,7 +4,7 @@ let questions = [];
 
 // Get questions
 const getQuestions = async () => {
-  const res = await fetch("../data/questions.json");
+  const res = await fetch("../data/User.json");
   questions = await res.json();
 };
 
